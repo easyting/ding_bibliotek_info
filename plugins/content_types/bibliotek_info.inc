@@ -23,9 +23,9 @@ function ding_bibliotek_info_bibliotek_info_render($subtype, $conf, $panel_args,
 
   if (arg(0) == 'search' && arg(1) == 'ting') {
     $content->content = t(
-      'Try to search for !placeholder on bibliotek.dk.',
+      'Try to search for !phrase on bibliotek.dk.',
       array(
-        '!placeholder' => l(
+        '!phrase' => l(
           $query,
           'http://bibliotek.dk/search/work/' . $query,
           array(
@@ -38,6 +38,10 @@ function ding_bibliotek_info_bibliotek_info_render($subtype, $conf, $panel_args,
     );
   }
 
+  // @todo
+  // Unfortunately there is no fast way to detect empty search result,
+  // so remove the pane forcibly via script.
+  drupal_add_js(drupal_get_path('module', 'ding_bibliotek_info') . '/js/ding_bibliotek_info.scripts.js', array('type' => 'file', 'scope' => 'footer'));
 
   return $content;
 }
