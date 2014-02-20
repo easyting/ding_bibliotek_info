@@ -1,3 +1,6 @@
+/**
+ * @file
+ */
 (function ($) {
   Drupal.behaviors.ding_bibliotek_info = {
     attach: function (context, settings) {
