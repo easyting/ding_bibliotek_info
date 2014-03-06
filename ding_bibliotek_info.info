@@ -1,6 +1,6 @@
 name = Bibliotek.dk info
 description = Provides information area that can be inserted to any region of the page.
-version = 7.x-0.1
+version = 7.x-1.19
 core = 7.x
 package = Artesis
 dependencies[] = ctools
