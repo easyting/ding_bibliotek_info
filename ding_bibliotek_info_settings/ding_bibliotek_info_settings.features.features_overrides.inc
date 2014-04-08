@@ -12,7 +12,17 @@ function ding_bibliotek_info_settings_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: page_manager_handlers
-  $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|configuration"]["DELETED"] = TRUE;
+  $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|cache|method"] = 'rules';
+  $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|cache|settings"] = array(
+    'granularity' => 'args',
+    'language' => 1,
+    'language_content' => 1,
+    'advanced' => array(),
+    'cache_key' => '5343caa7bd0ae',
+    'substitute' => 0,
+    'new' => TRUE,
+  );
+  $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|configuration"] = '';
   $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|panel"] = 'main_content';
   $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|position"] = 6;
   $overrides["page_manager_handlers.search_ting_search_panel_context.conf|display|content|new-10|subtype"] = 'bibliotek_info';
