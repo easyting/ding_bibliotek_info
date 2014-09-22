@@ -22,7 +22,7 @@ function ding_bibliotek_info_bibliotek_info_render($subtype, $conf, $panel_args,
   $content->title = '';
 
   if (arg(0) == 'search' && arg(1) == 'ting') {
-    $content->content = t(
+    $content->content = '<strong>' . t('Did you not find what you were looking for?') .'</strong><br>' . t(
       'Try to search for !phrase on bibliotek.dk.',
       array(
         '!phrase' => l(
