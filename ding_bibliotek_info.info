@@ -1,8 +1,9 @@
 name = Bibliotek.dk info
 description = Provides information area that can be inserted to any region of the page.
-version = 7.x-1.0
+version = 7.x-1.0.1
 core = 7.x
 package = easyDDB
 dependencies[] = ctools
 dependencies[] = ting_search
 files[] = ding_bibliotek_info.test
+
