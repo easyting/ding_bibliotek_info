@@ -1,0 +1,45 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  ding_bibliotek_info.module: n/a
+#  ding_bibliotek_info.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-03-09 11:32+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ding_bibliotek_info.module:14
+msgid "Ding bibliotek info"
+msgstr ""
+
+#: ding_bibliotek_info.module:47
+msgid "Did you not find what you were looking for?"
+msgstr ""
+
+#: ding_bibliotek_info.module:47
+msgid "Try to search for !phrase on bibliotek.dk."
+msgstr ""
+
+#: ding_bibliotek_info.info:0
+msgid "Bibliotek.dk info"
+msgstr ""
+
+#: ding_bibliotek_info.info:0
+msgid "Provides information area that can be inserted to any region of the page."
+msgstr ""
+
+#: ding_bibliotek_info.info:0
+msgid "easyDDB"
+msgstr ""
+
