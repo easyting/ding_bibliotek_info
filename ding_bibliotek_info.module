@@ -5,10 +5,72 @@
  */
 
 /**
- * Implementats of hook_ctools_plugin_directory().
+ * Implements hook_block_info().
  */
-function ding_bibliotek_info_ctools_plugin_directory($module, $plugin) {
-  if ($module == 'ctools' && $plugin == 'content_types') {
-    return 'plugins/' . $plugin;
+function ding_bibliotek_info_block_info() {
+  $blocks = array();
+
+  $blocks['bibliotek_info'] = array(
+    'info' => t('Ding bibliotek info'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ding_bibliotek_info_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'bibliotek_info':
+      $block['subject'] = '';
+      $block['content'] = ding_bibliotek_info_content();
+      break;
   }
+
+  return $block;
+}
+
+/**
+ * Created bibliotek info content.
+ *
+ * @return string
+ *   Markup string.
+ */
+function ding_bibliotek_info_content() {
+  drupal_add_js(drupal_get_path('module', 'ding_bibliotek_info') . '/js/ding_bibliotek_info.scripts.js', array('type' => 'file', 'scope' => 'footer'));
+
+  $query = arg(2);
+  return '<strong>' . t('Did you not find what you were looking for?') . '</strong><br>' . t('Try to search for !phrase on bibliotek.dk.', array(
+    '!phrase' => l($query, 'http://bibliotek.dk/search/work/' . $query, array(
+      'attributes' => array(
+        'target' => '_blank',
+      )
+    ))
+  ));
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function ding_bibliotek_info_preprocess_25_50_25(&$variables) {
+  $search_result = arg(0) == 'search' && arg(1) == 'ting';
+
+  if (!$search_result) {
+    return;
+  }
+
+  $block = module_invoke('ding_bibliotek_info', 'block_view', 'bibliotek_info');
+  $bibliotek_info_markup =
+   '<div class="panel-pane pane-block pane-bibliotek-info">' .
+   '<div class="pane-content">' .
+   render($block['content']) .
+   '</div>' .
+   '</div>';
+
+   $existing_content = $variables['content']['main_content'];
+   $variables['content']['main_content'] = $existing_content . $bibliotek_info_markup;
 }
