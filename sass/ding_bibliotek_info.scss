@@ -1,10 +1,23 @@
+@import "_mixins";
+
 /* Colors variables
    ========================================================================== */
 
 $white:                   #fff;
 
 
-.pane-ding-bibliotek-info-bibliotek-info {
-  background-color: $white;
-  padding: 10px;
+.pane-bibliotek-info {
+  padding: 15px;
+
+  .pane-content {
+    padding: 20px;
+
+    // Media from-medium
+
+    @include from-medium() {
+      background-image: url('../images/dbc-logo-footer.png');
+      background-position: 95% 50%;
+      background-repeat: no-repeat;
+    }
+  }
 }
