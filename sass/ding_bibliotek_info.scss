@@ -8,9 +8,10 @@ $white:                   #fff;
 
 .pane-bibliotek-info {
   padding: 15px;
-  background: $white;
+  background-image: url('../images/pw_maze_white.png');
 
   .pane-content {
+    background-color: transparentize($white, .1);
     padding: 20px;
 
     // Media from-medium
