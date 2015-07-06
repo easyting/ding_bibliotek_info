@@ -1,0 +1,37 @@
+/**
+ * Mixins
+ *
+ * @author magnify
+ */
+/* Breakpoints
+   ========================================================================== */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/* Pseudo arrow
+ *
+ * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
+   ========================================================================== */
+/* Colors variables
+   ========================================================================== */
+.pane-bibliotek-info {
+  padding: 15px;
+  background: #fff;
+}
+.pane-bibliotek-info .pane-content {
+  padding: 20px;
+}
+@media only screen and (min-width: 769px) {
+  .pane-bibliotek-info .pane-content {
+    background-image: url("../images/dbc-logo-footer.png");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+  }
+}
