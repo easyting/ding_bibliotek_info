@@ -8,7 +8,12 @@ $white:                   #fff;
 
 .pane-bibliotek-info {
   padding: 15px;
+  position: relative;
   background-image: url('../images/pw_maze_white.png');
+
+  .bibliotek-info-logo {
+    display: none;
+  }
 
   .pane-content {
     background-color: transparentize($white, .1);
@@ -17,9 +22,17 @@ $white:                   #fff;
     // Media from-medium
 
     @include from-medium() {
-      background-image: url('../images/dbc-logo-footer.png');
-      background-position: 95% 50%;
-      background-repeat: no-repeat;
+      .bibliotek-info-logo {
+        background-image: url('../images/dbc-logo-footer.png');
+        display: block;
+        height: 28px;
+        margin-top: -14px;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        width: 150px;
+        z-index: 11;
+      }
     }
   }
 }
