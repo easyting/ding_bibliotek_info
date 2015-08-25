@@ -41,10 +41,10 @@ function ding_bibliotek_info_block_view($delta = '') {
  *   Markup string.
  */
 function ding_bibliotek_info_content() {
-  drupal_add_js(drupal_get_path('module', 'ding_bibliotek_info') . '/js/ding_bibliotek_info.scripts.js', array('type' => 'file', 'scope' => 'footer'));
+  drupal_add_css(drupal_get_path('module', 'ding_bibliotek_info') . '/css/ding_bibliotek_info.css', array('type' => 'file'));
 
   $query = arg(2);
-  return '<strong>' . t('Did you not find what you were looking for?') . '</strong><br>' . t('Try to search for !phrase on bibliotek.dk.', array(
+  return '<a href="http://bibliotek.dk" class="bibliotek-info-logo" target="_blank"></a><strong>' . t('Did you not find what you were looking for?') . '</strong><br>' . t('Try to search for !phrase on bibliotek.dk.', array(
     '!phrase' => l($query, 'http://bibliotek.dk/search/work/' . $query, array(
       'attributes' => array(
         'target' => '_blank',

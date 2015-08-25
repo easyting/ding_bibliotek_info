@@ -1,0 +1,38 @@
+@import "_mixins";
+
+/* Colors variables
+   ========================================================================== */
+
+$white:                   #fff;
+
+
+.pane-bibliotek-info {
+  padding: 15px;
+  position: relative;
+  background-image: url('../images/pw_maze_white.png');
+
+  .bibliotek-info-logo {
+    display: none;
+  }
+
+  .pane-content {
+    background-color: transparentize($white, .1);
+    padding: 20px;
+
+    // Media from-medium
+
+    @include from-medium() {
+      .bibliotek-info-logo {
+        background-image: url('../images/dbc-logo-footer.png');
+        display: block;
+        height: 28px;
+        margin-top: -14px;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        width: 150px;
+        z-index: 11;
+      }
+    }
+  }
+}
