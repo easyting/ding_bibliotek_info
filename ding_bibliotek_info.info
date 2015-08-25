@@ -1,6 +1,6 @@
 name = Bibliotek.dk info
 description = Provides information area that can be inserted to any region of the page.
-version = 7.x-2.0.0+easy
+version = 7.x-2.2.0+easy
 core = 7.x
 package = easyDDB
 dependencies[] = ctools
