@@ -22,6 +22,8 @@ $white:                   #fff;
     // Media from-medium
 
     @include from-medium() {
+      padding-right: 188px;
+
       .bibliotek-info-logo {
         background-image: url('../images/dbc-logo-footer.png');
         display: block;
