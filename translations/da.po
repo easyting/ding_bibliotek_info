@@ -1,0 +1,53 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  ding_bibliotek_info.info: n/a
+#  plugins/content_types/bibliotek_info.inc: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-02-19 16:14+0100\n"
+"PO-Revision-Date: 2015-02-20 15:21+0100\n"
+"Last-Translator: Martin Cording <mc@inlead.dk>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Language: da\n"
+"X-Generator: Poedit 1.7.4\n"
+
+#: ding_bibliotek_info.info:0
+msgid "Bibliotek.dk info"
+msgstr "Bibliotek.dk-widget"
+
+#: ding_bibliotek_info.info:0
+msgid "Provides information area that can be inserted to any region of the page."
+msgstr "Tilbyder en widget som kan indsættes i alle regioner på alle sider."
+
+#: ding_bibliotek_info.info:0
+msgid "easyDDB"
+msgstr ""
+
+#: plugins/content_types/bibliotek_info.inc:8
+msgid "Bibliotek info"
+msgstr "Bibliotek.dk-widget"
+
+#: plugins/content_types/bibliotek_info.inc:9
+msgid "Pane showing various textual information."
+msgstr "Widget der tilbyder videredirigering til Bibliotek.dk."
+
+#: plugins/content_types/bibliotek_info.inc:10
+msgid "Ding!"
+msgstr ""
+
+#: plugins/content_types/bibliotek_info.inc:25
+msgid "Did you not find what you were looking for?"
+msgstr "Fandt du ikke hvad du søgte?"
+
+#: plugins/content_types/bibliotek_info.inc:25
+msgid "Try to search for !phrase on bibliotek.dk."
+msgstr "Prøv din søgning (!phrase) på bibliotek.dk."

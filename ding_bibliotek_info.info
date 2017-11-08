@@ -1,7 +1,9 @@
 name = Bibliotek.dk info
 description = Provides information area that can be inserted to any region of the page.
-version = 7.x-1.19
+version = 7.x-3.0.2
 core = 7.x
-package = Artesis
+package = easyOPAC
 dependencies[] = ctools
 dependencies[] = ting_search
+files[] = ding_bibliotek_info.test
+

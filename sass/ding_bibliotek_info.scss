@@ -1,0 +1,29 @@
+@import "../../../themes/ddbasic/sass/_base.scss";
+
+.pane-bibliotek-info {
+  position: relative;
+    
+  .pane-content {
+    background-color: transparentize($white, .1);
+
+    .bibliotek-info-logo {
+      background-image: url('../images/dbc-logo-popup.png');
+      display: block;
+      height: 28px;
+      margin-top: -14px;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      width: 150px;
+      z-index: 11;
+      background-size: 150px 28px;
+      background-repeat: no-repeat;
+    }
+
+    @include media($mobile) {
+      .bibliotek-info-logo {
+        display: none;
+      }
+    }
+  }
+}
