@@ -7,7 +7,7 @@
     background-color: transparentize($white, .1);
 
     .bibliotek-info-logo {
-      background-image: url('../images/dbc-logo-footer.png');
+      background-image: url('../images/dbc-logo-popup.png');
       display: block;
       height: 28px;
       margin-top: -14px;
@@ -16,6 +16,8 @@
       top: 50%;
       width: 150px;
       z-index: 11;
+      background-size: 150px 28px;
+      background-repeat: no-repeat;
     }
 
     @include media($mobile) {

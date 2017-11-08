@@ -80,7 +80,7 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 .pane-bibliotek-info .pane-content .bibliotek-info-logo {
-  background-image: url("../images/dbc-logo-footer.png");
+  background-image: url("../images/dbc-logo-popup.png");
   display: block;
   height: 28px;
   margin-top: -14px;
@@ -89,6 +89,8 @@
   top: 50%;
   width: 150px;
   z-index: 11;
+  background-size: 150px 28px;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 600px) {
   .pane-bibliotek-info .pane-content .bibliotek-info-logo {
